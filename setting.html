@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flow 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script><!-- Bootstrap JS-->
+    <script src="https://kit.fontawesome.com/77a003771d.js" crossorigin="anonymous"></script><!-- Fontawesome-->
+
+</head>
+<body>
+    <div class="container text-center">
+        
+        <div class="row">
+          <div class="col-2 left">
+            <a href="#" class="links">Account Settings</a><br>
+            <a href="availability.html" class="links">Availability Settings</a>
+          </div>
+          <div class="col-9 right">
+
+            <div class="account row">
+                <div class="col-3 img_thumbnail">
+                    <img class="avatar_img" src="img/avatar.png">
+                    <i class="icon fa-solid fa-camera"></i>
+                </div>
+                <div class="col-7 account_details">
+                        <form class="info">
+                            <label for="name" class="account">Name
+                                <ul class="nav-items">
+                                    <!-- Dropdown menu -->  
+                                <li class="nav-item nav-item-dropdown">
+                                    <a class="dropdown-trigger" href="#">DR</a>
+                                  </li>
+                                </ul>
+                                
+                                  <input type="text" class="account_edit">
+                            </label>
+                            <label class="account">
+                            <label for="email">Email <input type="email" class="account_edit" placeholder="sammywin@doctor.com"></label>
+                            <label for="phone">Phone <input type="text" class="account_edit" placeholder="9123543286"> </label>
+                            </label>
+                            <label for="speciality">speciality <input type="text" class="account_edit" placeholder="cardiologist"> </label>
+                            <label for="NPI">NPI no <input type="text" class="account_edit"></label>
+                            <label for="location">Practice Location <input type="text" class="account_edit"> </label>
+                        </form>
+                </div>
+                <div class="col-2 edit">
+                    
+                    <button id="btn" class="btn  cust-button" >Edit </button>
+                </div>
+            </div>
+            
+
+
+
+          </div>
+        </div>
+      </div>
+
+
+    
+</body>
+<script>
+    //used to change the button text to save when clicked edit
+    const btn = document.getElementById('btn');
+    btn.addEventListener('click', function handleClick() {
+    const initialText = 'Edit';
+    if (btn.textContent.toLowerCase().includes(initialText.toLowerCase())) {
+        btn.innerHTML =
+        '<span style="background-color: white;color:black">Save</span>';
+    } else {
+        btn.textContent = initialText;
+    }
+    });
+</script>
+</html>

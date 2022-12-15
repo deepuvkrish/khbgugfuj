@@ -1,0 +1,132 @@
+.left {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #a0a0a063;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .right {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #a0a0a063;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+.text-center{
+    padding-top: 10px;
+}
+
+  .avatar_img{
+    position: relative;
+    top: 30px;
+    width: 100px;
+}
+
+.account{
+    display: flex;
+    flex-direction: row;
+    padding-top:20px;
+}
+.cust-button{
+    background-color: #18385c;
+    color:white;    
+}
+
+.links{
+    text-decoration: none;
+    color:#18385c;
+    font-size: 20px;
+}
+
+.account_edit{
+    border:none;
+    border-bottom:1px solid #18385c40; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.icon{
+    position: relative;
+    font-size: 20px;
+    left: -40px;
+    bottom: -75px;
+}
+
+.edit{
+    padding-top: 20px
+}
+
+
+ul,
+li {
+  list-style: none;
+  -webkit-padding-start: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav-item {
+  padding: 1em;
+  display: inline;
+}
+
+.nav-item-dropdown {
+  position: relative;
+}
+.nav-item-dropdown:hover > .dropdown-menu {
+  display: block;
+  opacity: 1;
+}
+
+.dropdown-trigger {
+  position: relative;
+}
+.dropdown-trigger:focus + .dropdown-menu {
+  display: block;
+  opacity: 1;
+}
+.dropdown-trigger::after {
+  content: "›";
+  position: absolute;
+  color: #070707;
+  font-size: 24px;
+  font-weight: bold;
+  transform: rotate(90deg);
+  top: -5px;
+  right: -15px;
+}
+
+.dropdown-menu {
+  background-color: #fefefe;
+  display: inline-block;
+  text-align: right;
+  position: absolute;
+  top: 2.5rem;
+  right: -10px;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  width: 160px;
+}
+.dropdown-menu a {
+  color: #fff;
+}
+
+.dropdown-menu-item {
+  cursor: pointer;
+  padding: 1em;
+  text-align: center;
+}
+.dropdown-menu-item:hover {
+  background-color: #eb272d;
+}

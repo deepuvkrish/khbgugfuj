@@ -1,0 +1,26 @@
+.Header{
+    text-align: right;
+    color:white; 
+    background-color:rgba(7, 20, 94, 0.767);
+    padding: 14px;
+    margin-left: 95px;
+    margin-right: 95px;
+    height: 76px;
+    text-align:right justify;
+}
+img{
+    margin-left: 95px;
+    margin-top: -7px;
+    height: 100%;
+    
+}
+.sign{
+    
+    padding-left: 100px;
+    display:inline-block
+    }
+
+ 
+ 
+   
+    
